@@ -160,3 +160,11 @@ footer{
 	-webkit-transition: all 2.5s ease-out;
 	transition: all 2.5s ease-out;
 }
+#tab {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    top: 35px;
+    left: 25px;
+    cursor: pointer;
+}

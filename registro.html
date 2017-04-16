@@ -70,6 +70,19 @@
                 <div id="fb-root"></div>
                 <script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
                 <fb:like href="https://www.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/" send="true" layout="box_count" show-faces"false" font="tahoma"></fb:like>
+
+                <!-- Contador de visitas-->
+                <div id="tab-one">TAB ONE</div> 
+                <script>
+                Enabler.counter(eventId:String, opt_isCumulative:Boolean);
+                </script>
+                <script >
+                function tabOneClickHandler(e) {
+                    Enabler.counter('Click on Tab 1');
+                }
+                document.getElementById('tab-one').addEventListener('click',
+                tabOneClickHandler, false);
+                </script> 
                 </aside>
             </section>
             <footer>
