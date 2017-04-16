@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="utf-8" />
-        <meta description="Registro"/>
-        <title>registro</title>
-        <link rel="stylesheet" type="text/css" media="all" href="css/estilos.css"/>
-    </head>
-
-        <body>
+<head>
+    <meta charset="UTF-8">
+    <meta content="Grupo 301122A_360 " name="author">
+    <meta content="Fase de Construcción: Creando un OVI en formato WEB con HTML5 y CSS3" name="description">
+    <meta content="UNAD, diseño we html" name="keywords">
+    <title>Red Gourmet</title>  
+    <link rel="stylesheet" href="css/estilos-form.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script>
+    $(window).load(function(){
+        $(".flexslider").flexslider();
+    });
+    </script>
+</head>
+<body>
             <header>
-            <h1>Regístrate en Red Gourmet</h1>
-                <form>
-                        
-                    <br><input type="text" placeholder="Nombre" maxlength="30" name="nombre" id="nombre">
-                    <br>
-                    <br><input type="text" placeholder="Apellido" maxlength="30" name="nombre" id="apellido">
-                    <br>
-                    <br><input type="email" placeholder="Correo" maxlength="30" name="correo" id="correo">
-                    <br>
-                    <br><input type="text" placeholder="Contraseña" maxlength="10" name="contraseña" id="contraseña">
-                    <br>
-                    <br><input type="text" placeholder="Repetir Contraseña" maxlength="30" name="ciudad" id="contrasela">
-                    <br>
-                     <h4 id="notification"></h4>
-                    <br><button> <a href="mensajedeconfirmacion.html">
-                        Crear Cuenta
-                    </a></button>
-                   
+                <h1>
+                    <a href="index.html">
+                        <img class="fade" src="img/encabe1.png" alt="header">
+                    </a>
+                </h1>
+                <nav>
+            <ul>
+                <li><a href="lecturas.html">Lecturas</a></li>
+                <li><a href="contactenos.html">Contactenos</a></li>
+                <li><a href="index.html">Regresar</a></li>
+            </ul>
+        </nav>
+             </header>
+                <section id="contenido">
+                 <section id="principal">
+               
+               <form id="alta-contacto" name="alta_frm" action="mensajedeconfirmacion.html" method="post" enctype="multipart/form.data">
+                    <fieldset>
+                    <legend>Alta de Contacto</legend>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" class="cambio" name="nombre_txt" placeholder="Escribe tu nombre" title="Tu Nombre" />
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" id="apellido" class="cambio" name="apellido_txt" placeholder="Escribe tu Apellido" title="Tu Nombre" />
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" class="cambio" name="email_txt" placeholder="Escribe tu email" title="Tu Email" requerid />
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña: </label>
+                        <input type="password" id="password" class="cambio" name="password_txt" placeholder="Escribe tu Contraseña" title="Tu Contraseña" />
+                    </div>   
+                    <div>
+                        <label for="confirmacion">Confirma tu Contraseña: </label>
+                        <input type="password" id="confirmacion" class="cambio" name="confirmacion_txt" placeholder="Confirma tu Contraseña" title="Confirma tu Contraseña" />
+                    </div>
+                    <div>
+                        <input type="submit" id="enviar-alta" class="cambio" name="enviar_btn" value="Crear Cuenta" />
+                    </div>         
                 </form>
-                    
-                </div>
-            </header>
+            </section>
+                <aside>
+                <!-- twitter -->
+                <script src="http://platform.twitter.com/widgets.js"></script>
+                <a href="https://twitter.com/UniversidadUNAD?lang=es" target="black" data-count="vertical">Twitter</a>
+                <br /><br />
+                <div id="fb-root"></div>
+                <script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+                <fb:like href="https://www.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/" send="true" layout="box_count" show-faces"false" font="tahoma"></fb:like>
+                </aside>
+            </section>
+            <footer>
+            <img src="img/logoUNAD.png">
+        </footer>
         </body>
 
 </html>

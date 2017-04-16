@@ -1,0 +1,162 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;	
+}
+article,figcaption, figure, footer, header, hgroup, nav,section{
+	display: block;
+}
+/* hoja de estilos */
+
+body{
+	background: #b3b3b3;
+	color:#FFF;
+	font-family:"Franklin Gothic Book";
+	font-size: 1em;		
+}
+a{
+	color: #57ABB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	color: #F60;
+}
+figcaption{
+	font-size: 0.25em;
+	padding: 0.25em;
+	text-align: center;
+}
+fieldset{
+	border: .1em solid #F60;
+	border-radius: .5em;
+	padding: 1em;
+}
+legend{
+	color: #F60;
+	font-size: 1.4em;
+	padding: 0.2em;
+
+}
+nav ul{
+	text-style: none;
+}
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+}
+nav a{
+	background: #FFF;
+	border: 0.1em solid #57ABB8;
+	border-radius: 0.25em;
+	color: #F60;
+	display: block;
+	font-size: 1.4em;
+	padding: 0.2em;
+	transition: all 0.5s ease-in;
+}
+nav a:hover{
+	background: #212121;
+	border: 0.1em dashed #F60;
+	border-radius: 0 0.5em 0 0.5em;
+	color: #FFF;
+	transition: all 0.5s ease-out;
+}
+form div{
+	margin: .5em;
+}
+input [type="checkbox"], input[type="radio"], select{
+	background: #EEE;
+	cursor: pointer;
+}
+input[type="date"], input[type="email"], input[type="number"], input[type="text"], input[type="password"]{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60;
+	font-style: 1em;
+	padding: .25em;
+}
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:focus{
+	background: #C6ECF9;
+}
+input[type="file"]{
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 150px;
+}
+input[type="submit"]{
+	background: #FF9A55;
+	border-radius: 0 .25em;
+	color: #500;
+	font-family: "Franklin Gothic Book", Helvetica, Verdana;
+	font-size: 1.5em;
+}
+input[type="submit"]:hover{
+	background: #7BBFD5;
+	border-radius: .25em 0;
+	color: #000;
+	cursor: pointer;
+}
+label{
+	cursor: pointer;
+	font-size: 1.2em;
+}	
+img, video {
+	max-width: 100%;
+}
+
+header, section#contenido, footer{
+	background: #FFF;
+	margin: 0 auto;
+	max-width: 65%;
+	text-align: center;
+}
+header h1, nav{
+	background: #FFF;
+	display: inline-block;
+	max-width: 100%
+	vertical-align: middle;
+}
+header img{
+	border-radius: 1em;
+}
+section#principal, aside{
+	-ms-box-sizing: border-box ;
+	-moz-box-sizing: border-box ;
+	-o-box-sizing: border-box ;
+	-webkit-box-sizing: border-box ;
+	box-sizing: border-box ;
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%;
+	font-size: 1em; 
+}
+aside{
+	width: 30%;
+}
+aside img{
+	border-radius: 0.5em;
+}
+footer{
+	color: #000;
+	font-size: 0.85em;
+	padding: 0.75em 0;
+}
+#contenido{
+	margin: 0 auto;
+	text-align: center;
+}
+.cambio{
+	-ms-transition: all 2.5s ease-out;
+	-moz-transition: all 2.5s ease-out;
+	-o-transition: all 2.5s ease-out;
+	-webkit-transition: all 2.5s ease-out;
+	transition: all 2.5s ease-out;
+}

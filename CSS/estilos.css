@@ -7,8 +7,6 @@
 article,figcaption, figure, footer, header, hgroup, nav,section{
 	display: block;
 }
-
-
 /* hoja de estilos */
 
 body{
@@ -34,10 +32,11 @@ figcaption{
 img, video {
 	max-width: 100%;
 }
+
 header, section#contenido, footer{
 	background: #FFF;
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 65%;
 	text-align: center;
 }
 header h1, nav{
@@ -101,5 +100,9 @@ footer{
 	color: #000;
 	font-size: 0.85em;
 	padding: 0.75em 0;
+}
+#contenido{
+	margin: 0 auto;
+	text-align: center;
 }
 
